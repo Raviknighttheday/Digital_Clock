@@ -10,7 +10,7 @@ label = Label(window, text="Welcome back, Ravi!", font=("Ariel Black",78,"bold")
 label.pack(pady=100)
 
 def clock():
-    time = datetime.now().strftime(:%H:%M:%S")
+    time = datetime.now().strftime("%H:%M:%S")
     label.configure(text=time)
     label.after(500,clock)
 
